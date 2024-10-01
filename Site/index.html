@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Сайт-визитка Александра</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <!-- MK Lightbox -->
+    <link href="css/mklb.css" rel="stylesheet" type="text/css"/>
+    <!-- Icons -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css"/>
+    <!-- Slider -->
+    <link href="css/tiny-slider.css" rel="stylesheet"/>
+    <!-- Main css File -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt"/>
+    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+
+    <!-- Анимации текста -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+
+<body data-bs-spy="scroll" data-bs-offset="20" data-bs-target="#navbar-navlist">
+<!-- Loader -->
+<div id="preloader">
+    <div id="status">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+</div>
+<!-- Loader -->
+
+<!-- Navbar Start -->
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
+    <div class="container">
+        <!-- Logo container-->
+        <a class="logo navbar-brand" href="index.html#">Александр</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i class="mdi mdi-menu"></i>
+        </button><!--end button-->
+
+        <div class="collapse navbar-collapse navigation" id="navbarCollapse">
+            <ul id="navbar-navlist" class="navbar-nav navbar-nav-link ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html#home">Главная</a>
+                </li><!--end nav item-->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#services">Навыки и стек</a>
+                </li><!--end nav item-->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Резюме</a>
+                </li><!--end nav item-->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">Контакты</a>
+                </li><!--end nav item-->
+            </ul>
+        </div>
+    </div><!--end container-->
+</nav><!--end navbar-->
+<!-- Navbar End -->
+
+<!-- Hero Area -->
+<div class="hero-area position-relative bg-half-120" style="background-image:url('images/fon.jpg')"
+     data-jarallax='{"speed": 0.5}' id="home">
+    <div class="bg-overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12 align-items-center text-center">
+                <div class="title-heading mt-4 pb-60">
+                    <img src="images/pal.png" class="img-fluid rounded-circle wow animate__animated animate__fadeInLeftBig" alt="">
+                    <h1 class="font-36 text-white mt-4 wow animate__animated animate__fadeInRight">Привет, Я - Александр</h1>
+                    <h6 class="designation mb-3 text-white wow animate__animated animate__fadeInDownBig">Я - QA engineer, разработчик веб приложений, Тестировщик ПО</h6>
+                    <div class="hero-btn mt-4 pt-2">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-primary rounded text-white mb-2 wow animate__animated animate__rubberBand">Скачать мое резюме <i
+                                data-feather="download" class="fea icon-sm"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card public-profile border-0 rounded shadow no-margin" style="z-index: 1;">
+                    <div class="card-body wow animate__animated animate__fadeInLeft">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-4 text-md-start">
+                                <!--<img src="images/client/05.jpg" class="avatar avatar-large rounded-circle shadow d-block mx-auto" alt="">-->
+                                <div class="about-details key-feature bg-light">
+                                    <div class="media-body content">
+                                        <h6 class="title mb-2">Персональные данные</h6>
+                                        <div class="bor-bottom mt-2 mb-2"></div>
+                                        <p class="text-muted mb-2 mt-3 font-14">Email: MyEmail@yandex.ru</p>
+                                        <p class="text-muted mb-2 font-14">Языки: Русский, английский</p>
+                                        <p class="text-muted mb-0 font-14">Национальность: Русский</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-9 col-md-8">
+                                <div class="row align-items-end">
+                                    <div class="col-md-12 text-md-start mt-4 mt-sm-0">
+                                        <h4 class="heading me-2">Я —
+                                            <span id="typed" class="text-primary"></span>
+                                        </h4>
+                                        <p class="text-light-muted mt-2">Я — Разработчик с более
+                                            чем двухлетним опытом работы в области программирования веб-приложений.
+                                            А также QA engineer тестировщик в области функционального и нефункционального
+                                            тестирования программного обеспечения, включая тестирование десктопных
+                                            приложений и веб-сайтов, тестирования UI/UX, API</p>
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section -->
+
+
+<!-- Service Start -->
+<section class="section bg-light" id="services">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="container-title text-center mb-4 pb-2">
+                    <div class="titles">
+                        <h2 class="title mb-4">Навыки и стек</h2>
+                        <p class="pera-title para-desc-600 text-light-muted mb-0 mx-auto">Во время работы я
+                            использую следующий стек инструментов и технологий:</p>
+                        <span></span>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__zoomOutUp" id="triggerModal1">
+                <div class="feature-widget text-left rounded">
+                    <div class="services-icon text-primary mb-3">
+                        <i data-feather="monitor" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Developer Tools в браузере</h3>
+                        <p class="text-light-muted mb-4">Для тестирования front-части web-приложений</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__tada" id="triggerModal2">
+                <div class="feature-widget text-left rounded">
+                    <div class="services-icon text-primary mb-3">
+                        <i data-feather="feather" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Postman</h3>
+                        <p class="text-light-muted mb-4">Для тестирования API и написания автотестов</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__wobble" id="triggerModal3">
+                <div class="feature-widget text-left rounded">
+                    <div class="services-icon text-primary mb-3">
+                        <i data-feather="disc" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Swagger</h3>
+                        <p class="text-light-muted mb-4">Для тестирования API и документации по API</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__rotateOut" id="triggerModal4">
+                <div class="feature-widget text-left rounded">
+                    <div class="services-icon text-primary mb-3">
+                        <i data-feather="database" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">MySQL</h3>
+                        <p class="text-light-muted mb-4">Просмотр данных в БД и написание SQL-запросов</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__bounceOut" id="triggerModal5">
+                <div class="feature-widget text-left rounded">
+                    <div class="services-icon text-primary mb-3">
+                        <i data-feather="watch" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">REST-API, SOAP</h3>
+                        <p class="text-light-muted mb-4">Использование в процессе тестирования обмена данными</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__bounceOutLeft" id="triggerModal6">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="grid" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Jira</h3>
+                        <p class="text-light-muted mb-4">Организация ежедневной работы и написание багрепортов</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__fadeOutRight" id="triggerModal7">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="eye" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Allure TestOps</h3>
+                        <p class="text-light-muted mb-4">Написание тест-кейсов</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__flipInX" id="triggerModal8">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="crop" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Charles</h3>
+                        <p class="text-light-muted mb-4">Тестирование front-end / back-end</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__bounceOut" id="triggerModal9">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="codesandbox" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Kibana</h3>
+                        <p class="text-light-muted mb-4">Просмотр логов приложений</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__rotateInDownLeft" id="triggerModal10">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="edit" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">HTML, CSS</h3>
+                        <p class="text-light-muted mb-4">Тестирование front-end</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__rotateInUpLeft" id="triggerModal11">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="clipboard" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Figma</h3>
+                        <p class="text-light-muted mb-4">Тестирование user-interface front-end</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__rotateOutUpLeft" id="triggerModal12">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="cpu" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Pixel perfect</h3>
+                        <p class="text-light-muted mb-4">Тестирование user-interface front-end</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__zoomIn" id="triggerModal13">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="edit" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">PHP</h3>
+                        <p class="text-light-muted mb-4">Язык программирования для веб-разработки.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__flash" id="triggerModal14">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="edit" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">JavaScript</h3>
+                        <p class="text-light-muted mb-4">Мультипарадигменный язык программирования.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__pulse" id="triggerModal15">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="aperture" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Joomla</h3>
+                        <p class="text-light-muted mb-4">Это бесплатная система управления контентом (CMS).</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__flipInY" id="triggerModal16">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="monitor" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Open Server</h3>
+                        <p class="text-light-muted mb-4">Это локальный сервер для разработчиков.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__rotateIn" id="triggerModal17">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="layout" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Visual Studio Code</h3>
+                        <p class="text-light-muted mb-4">Редактор исходного кода.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__bounceOutDown" id="triggerModal18">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="cast" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">SpaceWeb</h3>
+                        <p class="text-light-muted mb-4">Интернет-хостинг для любых задач.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__bounce" id="triggerModal19">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="edit" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">Python</h3>
+                        <p class="text-light-muted mb-4">Язык программирования общего назначения.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__hinge" id="triggerModal20">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="edit" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">C++</h3>
+                        <p class="text-light-muted mb-4">Компилируемый язык программирования общего назначения.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__wobble" id="triggerModal21">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="edit" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">C#</h3>
+                        <p class="text-light-muted mb-4">Объектно-ориентированный язык программирования общего назначения.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 wow animate__animated animate__fadeInUp" id="triggerModal22">
+                <div class="feature-widget text-left rounded">
+                    <div class="icon services-icon text-primary mb-3">
+                        <i data-feather="monitor" class="fea icon-md"></i>
+                    </div>
+                    <div class="services-texts">
+                        <h3 class="title mb-3">ChatGPT</h3>
+                        <p class="text-light-muted mb-4">Чат-бот, способный генерировать текст, отвечая на вопросы пользователей.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div><!-- end row -->
+    </div>
+    <!--НАЧАЛО Модальное окно -->
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal1">&times;</span>
+            <h2>Developer Tools в браузере</h2>
+            <p>DevTools — это набор инструментов, встроенных в браузер Google Chrome, 
+            для создания и отладки сайтов. С их помощью можно просматривать исходный код сайта, 
+            отлаживать работу frontend: HTML, CSS и JavaScript.</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно -->
+
+    <!--НАЧАЛО Модальное окно 2 -->
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal2">&times;</span>
+            <h2>Postman</h2>
+            <p>Postman — это инструмент для тестирования и работы с API.
+            Он представляет собой графический интерфейс пользователя (GUI), 
+            с помощью которого можно отправлять, создавать и получать HTTP-запросы к веб-службам.</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 2 -->
+
+    <!--НАЧАЛО Модальное окно 3 -->
+    <div id="myModal3" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal3">&times;</span>
+            <h2>Swagger</h2>
+            <p>Swagger позволяет автоматически генерировать клиентский код для различных языков программирования на основе спецификации OpenAPI.
+            Это позволяет разработчикам быстро интегрировать API в свои приложения без необходимости вручную создавать и настраивать HTTP-запросы.</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 3 -->
+
+    <!--НАЧАЛО Модальное окно 4 -->
+    <div id="myModal4" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal4">&times;</span>
+            <h2>MySQL</h2>
+            <p>MySQL — это одна из систем управления базами данных (Databases Management System) или просто СУБД. Простыми словами, программа, с помощью которой создают и контролируют БД. Она предназначена для работы с базами реляционного типа и использует для взаимодействия с ними язык стандартизированных запросов (SQL).</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 4 -->
+
+    <!--НАЧАЛО Модальное окно 5 -->
+    <div id="myModal5" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal5">&times;</span>
+            <h2>REST-API, SOAP</h2>
+            <p>SOAP – это протокол для обеспечения коммуникации между приложениями.
+                SOAP API раскрывает операцию, а обработка запросов на основе передачи состояния.
+                REST – это архитектурный стиль для проектирования коммуникационных интерфейсов. 
+                (REST API) – данные.</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 5 -->
+
+    <!--НАЧАЛО Модальное окно 6 -->
+    <div id="myModal6" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal6">&times;</span>
+            <h2>Jira</h2>
+            <p>Jira — это инструмент управления рабочим процессом для команд разработчиков ПО, которые хотят систематизировать и отслеживать свою работу. Невероятная гибкость позволяет настроить Jira в соответствии с уникальным рабочим процессом команды.</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 6 -->
+
+    <!--НАЧАЛО Модальное окно 7 -->
+    <div id="myModal7" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal7">&times;</span>
+            <h2>Allure TestOps</h2>
+            <p>Allure TestOps — это мощный инструмент для управления тестированием, который помогает автоматизировать и оптимизировать процессы тестирования. Он предоставляет удобный интерфейс для работы с тестами, позволяет интегрировать различные инструменты и системы, а также анализировать результаты тестирования.</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 7 -->
+
+    <!--НАЧАЛО Модальное окно 8 -->
+    <div id="myModal8" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal8">&times;</span>
+            <h2>Charles</h2>
+            <p>Charles – программа прокси для изучения и отладки HTTPS трафика между клиентом и сервером. С его помощью можно проверить состав запроса и ответа, при необходимости изменить его.</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 8 -->
+
+    <!--НАЧАЛО Модальное окно 9 -->
+    <div id="myModal9" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal9">&times;</span>
+            <h2>Kibana</h2>
+            <p>Kibana – это инструмент визуализации и изучения данных, который применяется для таких задач, как анализ журналов и временных рядов, мониторинг приложений и текущих процессов.</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 9 -->
+
+    <!--НАЧАЛО Модальное окно 10 -->
+    <div id="myModal10" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal10">&times;</span>
+            <h2>HTML, CSS</h2>
+            <p>HTML определяет структуру содержимого страницы. Например, именно в HTML задаются заголовки и абзацы, изображения и т. д. CSS - язык таблиц стилей, который позволяет прикреплять стиль (например, шрифты и цвет) к структурированным документам (например, к вышеупомянутым документам HTML).</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 10 -->
+
+    <!--НАЧАЛО Модальное окно 11 -->
+    <div id="myModal11" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal11">&times;</span>
+            <h2>Figma</h2>
+            <p>igma — это облачный инструмент для проектирования и прототипирования, который позволяет пользователям создавать и совместно работать над дизайном веб-сайтов, мобильных приложений и других цифровых продуктов. </p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 11 -->
+
+    <!--НАЧАЛО Модальное окно 12 -->
+    <div id="myModal12" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal12">&times;</span>
+            <h2>Pixel perfect</h2>
+            <p>Pixel Perfect верстка — это особая техника создания структуры HTML-кода, которая позволяет сверстанному HTML-шаблону максимально точно совпадать с оригинальным макетом пиксель в пиксель. При наложении HTML-шаблона на макет PSD должно произойти полное совпадение графических элементов, изображений и текста.</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 12 -->
+
+    <!--НАЧАЛО Модальное окно 13 -->
+    <div id="myModal13" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal13">&times;</span>
+            <h2>PHP</h2>
+            <p>PHP — распространённый язык программирования общего назначения с открытым исходным кодом, который сконструировали специально для веб-разработки и который встраивают в HTML-разметку.</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 13 -->
+
+    <!--НАЧАЛО Модальное окно 14 -->
+    <div id="myModal14" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal14">&times;</span>
+            <h2>JavaScript</h2>
+            <p>JavaScript – это язык программирования, который используют разработчики для создания интерактивных веб-страниц. Функции JavaScript могут улучшить удобство взаимодействия пользователя с веб-сайтом: от обновления ленты новостей в социальных сетях и до отображения анимации и интерактивных карт.</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 14 -->
+
+    <!--НАЧАЛО Модальное окно 15 -->
+    <div id="myModal15" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal15">&times;</span>
+            <h2>Joomla</h2>
+            <p>система управления содержимым (CMS), написанная на языках PHP и JavaScript, использующая в качестве хранилища базы данных СУБД MySQL или другие стандартные промышленные реляционные СУБД.</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 15 -->
+
+    <!--НАЧАЛО Модальное окно 16 -->
+    <div id="myModal16" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal16">&times;</span>
+            <h2>Open Server</h2>
+            <p>Open Server — можно работать без установки программного обеспечения, запустив сервер с внешнего накопителя. Используется с целью разработки, отладки и тестирования веб-проектов, а также для предоставления веб-сервисов в локальных сетях.</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 16 -->
+
+    <!--НАЧАЛО Модальное окно 17 -->
+    <div id="myModal17" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal17">&times;</span>
+            <h2>Visual Studio Code</h2>
+            <p>Visual Studio Code (VS Code) — это кросс-платформенный редактор кода. С его помощью можно разрабатывать кросс-платформенные десктопные приложения, используя веб-технологии.</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 17 -->
+
+    <!--НАЧАЛО Модальное окно 18 -->
+    <div id="myModal18" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal18">&times;</span>
+            <h2>SpaceWeb</h2>
+            <p>SpaceWeb — компания в России, которая предоставляет надежный и производительный интернет-хостинг для любых задач. Пространство веб-хостинга — это объем хранилища, который предоставляет вам ваш хостинг-провайдер . Это хранилище измеряется в гигабайтах (ГБ) на диске и может варьироваться от долей ГБ до неограниченного хранилища.</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 18 -->
+
+    <!--НАЧАЛО Модальное окно 19 -->
+    <div id="myModal19" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal19">&times;</span>
+            <h2>Python</h2>
+            <p>Python — это язык программирования, который широко используется в интернет-приложениях, разработке программного обеспечения, науке о данных и машинном обучении (ML). Разработчики используют Python, потому что он эффективен, прост в изучении и работает на разных платформах.</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 19 -->
+
+    <!--НАЧАЛО Модальное окно 20 -->
+    <div id="myModal20" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal20">&times;</span>
+            <h2>C++</h2>
+            <p>C++ — компилируемый, статически типизированный язык программирования общего назначения.</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 20 -->
+
+    <!--НАЧАЛО Модальное окно 21 -->
+    <div id="myModal21" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal21">&times;</span>
+            <h2>C#</h2>
+            <p>C# — это кроссплатформенный язык программирования, на нем можно писать программы, особенно веб-приложения и для геймдева. 
+            Язык используется в backend-разработке веб-приложений: в работе с базами данных и сетью, в программировании логики и так далее.</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 21 -->
+
+    <!--НАЧАЛО Модальное окно 22 -->
+    <div id="myModal22" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal22">&times;</span>
+            <h2>ChatGPT</h2>
+            <p>Chat GPT означает Chat Generative Pre-Trained Transformer Это технология чат-бота на основе искусственного интеллекта (ИИ), которая может обрабатывать наш естественный человеческий язык и генерировать ответ.</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ Модальное окно 22 -->
+
+</section>
+<!-- End Start -->
+
+<!-- Contact Start -->
+<section class="custom-cursor section pb-0" id="contact">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="container-title text-center mb-4 pb-2">
+                    <div class="titles">
+                        <h2 class="title text-capitalize mb-4">Мои контакты</h2>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="contact-detail text-center">
+                    <div class="icon">
+                        <i data-feather="phone" class="fea icon-md"></i>
+                    </div>
+                    <div class="content mt-4">
+                        <h5 class="title">Телефон</h5>
+                        <a href="tel:+905488659956" class="text-primary">+7 800-555-35-35</a>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="contact-detail text-center">
+                    <div class="icon">
+                        <i data-feather="mail" class="fea icon-md"></i>
+                    </div>
+                    <div class="content mt-4">
+                        <h5 class="title">Email</h5>
+                        <a href="mailto:6660467@gmail.com<" class="text-primary">MyEmail@yandex.ru</a>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="contact-detail text-center">
+                    <div class="icon">
+                        <i data-feather="map-pin" class="fea icon-md"></i>
+                    </div>
+                    <div class="content mt-4">
+                        <h5 class="title">Локация</h5>
+                        <p class="text-light-muted">Ростовская обл, Новочеркасск</p>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+
+<footer class="footer footer-bar bg-black">
+    <div class="container text-foot text-center">
+        <p class="mb-0 text-white-50">©
+            <script>document.write(new Date().getFullYear())</script>
+            Александр.</p>
+    </div><!--end container-->
+</footer><!--end footer-->
+<!-- Footer End -->
+
+<a href="javascript: void(0);" class="back-to-top btn btn-icon btn-soft-primary" id="back-to-top"
+   onclick="topFunction()">
+    <i data-feather="arrow-up" class="icons"></i>
+</a>
+<!-- Back to top -->
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Javascript -->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- Slider -->
+<script src="js/tiny-slider.js"></script>
+<script src="js/tiny-slider-init.js"></script>
+
+<!-- MK Lightbox -->
+<script src="js/mklb.js"></script>
+
+<!-- Contact -->
+<script src="js/contact.js"></script>
+
+<!-- Counter init -->
+<script src="js/counter.init.js"></script>
+
+<!-- Feather icon -->
+<script src="js/feather.min.js"></script>
+
+<!-- Parallax -->
+<script src="js/parallax.js"></script>
+
+<!-- Typed -->
+<script src="js/typed.js"></script>
+<script src="js/typed.init.js"></script>
+
+<!-- Switcher -->
+<script src="js/switcher.js"></script>
+
+<!-- Main Js -->
+<script src="js/app.js"></script>
+
+<!-- Анимации текста -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+<!-- Мой js -->
+<script src="js/MyJs.js"></script>
+
+</body>
+</html>
