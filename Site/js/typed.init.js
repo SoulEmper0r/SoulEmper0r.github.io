@@ -8,7 +8,7 @@ var typed = new Typed('#typed', {
     backDelay: 1000,
     loop: true,
     strings: [
-        'Разработчик веб приложений', 'QA engineer',
+       'Программист', 'Разработчик веб приложений', 'QA engineer',
     ],
 });
 
